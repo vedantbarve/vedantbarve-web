@@ -26,7 +26,7 @@ class Heading extends StatelessWidget {
                     ),
                     child: ClipOval(
                       child: Image.asset(
-                        'assets/images/profile-picture.jfif',
+                        'assets/images/profile-picture.jpg',
                         height: 200,
                         width: 200,
                       ),
@@ -133,7 +133,7 @@ class Heading extends StatelessWidget {
                   ),
                   child: ClipOval(
                     child: Image.asset(
-                      'assets/images/profile-picture.jfif',
+                      'assets/images/profile-picture.jpg',
                       height: 220,
                       width: 220,
                     ),

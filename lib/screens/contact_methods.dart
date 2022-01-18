@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactMethods extends StatelessWidget {
   const ContactMethods({
@@ -21,7 +23,37 @@ class ContactMethods extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 500),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () async {
+                    await launch('https://github.com/vedantbarve');
+                  },
+                  child: SvgPicture.asset(
+                    'assets/svg/github.svg',
+                    height: 40,
+                    width: 40,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                const SizedBox(width: 20),
+                GestureDetector(
+                  onTap: () async {
+                    await launch('https://www.instagram.com/vedant_barve/');
+                  },
+                  child: SvgPicture.asset(
+                    'assets/svg/instagram.svg',
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );

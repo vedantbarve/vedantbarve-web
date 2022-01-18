@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,7 +13,7 @@ class Skills extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AutoSizeText(
+          Text(
             'Skills :',
             style: GoogleFonts.oswald(
               fontSize: 32,
@@ -47,6 +46,12 @@ class Skills extends StatelessWidget {
                 ),
                 SvgPicture.asset(
                   'assets/svg/flutter.svg',
+                  height: 60,
+                  width: 60,
+                  fit: BoxFit.contain,
+                ),
+                SvgPicture.asset(
+                  'assets/svg/firebase.svg',
                   height: 60,
                   width: 60,
                   fit: BoxFit.contain,

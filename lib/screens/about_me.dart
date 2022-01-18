@@ -21,7 +21,16 @@ class AboutMe extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 500),
+          ListTile(
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text('Hello my name is Vedant Barve'),
+                Text('PICT 25'),
+                Text('18 | Pune '),
+              ],
+            ),
+          ),
         ],
       ),
     );

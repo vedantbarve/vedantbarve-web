@@ -22,36 +22,36 @@ class HomeView extends StatelessWidget {
       );
     }
 
-    List<Widget> action = [
-      TextButton(
-        onPressed: () {},
-        child: const Text('About Me'),
-      ),
-      TextButton(
-        onPressed: () {},
-        child: const Text('Skills'),
-      ),
-      TextButton(
-        onPressed: () {},
-        child: const Text('Ongoing Projects'),
-      ),
-      TextButton(
-        onPressed: () {},
-        child: const Text('Past Projects'),
-      ),
-      TextButton(
-        onPressed: () {},
-        child: const Text('Contact Methods'),
-      ),
-    ];
+    // List<Widget> action = [
+    //   TextButton(
+    //     onPressed: () {},
+    //     child: const Text('About Me'),
+    //   ),
+    //   TextButton(
+    //     onPressed: () {},
+    //     child: const Text('Skills'),
+    //   ),
+    //   TextButton(
+    //     onPressed: () {},
+    //     child: const Text('Ongoing Projects'),
+    //   ),
+    //   TextButton(
+    //     onPressed: () {},
+    //     child: const Text('Past Projects'),
+    //   ),
+    //   TextButton(
+    //     onPressed: () {},
+    //     child: const Text('Contact Methods'),
+    //   ),
+    // ];
 
-    List<String> drawerList = [
-      'About Me',
-      'Skills',
-      'Ongoing Projects',
-      'Past Projects',
-      'Contact Methods',
-    ];
+    // List<String> drawerList = [
+    //   'About Me',
+    //   'Skills',
+    //   'Ongoing Projects',
+    //   'Past Projects',
+    //   'Contact Methods',
+    // ];
 
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth > 768) {
@@ -61,9 +61,9 @@ class HomeView extends StatelessWidget {
             child: const Icon(Icons.arrow_downward),
           ),
           appBar: AppBar(
-            centerTitle: (constraints.maxWidth < 768) ? true : false,
+            centerTitle: true,
             title: const Text('Vedant Barve'),
-            actions: (constraints.maxWidth > 768) ? action : [],
+            // actions: (constraints.maxWidth > 768) ? action : [],
           ),
           body: ListView(
             controller: _controller,
@@ -85,7 +85,7 @@ class HomeView extends StatelessWidget {
         );
       }
       return Scaffold(
-        floatingActionButton: FloatingActionButton.small(
+        floatingActionButton: FloatingActionButton(
           onPressed: () => animateToBottom(),
           child: const Icon(Icons.arrow_downward),
         ),
@@ -110,11 +110,32 @@ class HomeView extends StatelessWidget {
             const ContactMethods(),
           ],
         ),
-        drawer: Drawer(
-          child: ListView(
-            children: const [],
-          ),
-        ),
+        // drawer: Drawer(
+        //   child: ListView(
+        //     children: [
+        //       ListTile(
+        //         onTap: () {},
+        //         title: const Text('About Me'),
+        //       ),
+        //       ListTile(
+        //         onTap: () {},
+        //         title: const Text('Skills'),
+        //       ),
+        //       ListTile(
+        //         onTap: () {},
+        //         title: const Text('Ongoing Projects'),
+        //       ),
+        //       ListTile(
+        //         onTap: () {},
+        //         title: const Text('Past Projects'),
+        //       ),
+        //       ListTile(
+        //         onTap: () {},
+        //         title: const Text('Contact Methods'),
+        //       ),
+        //     ],
+        //   ),
+        // ),
       );
     });
   }
