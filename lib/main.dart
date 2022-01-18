@@ -21,6 +21,7 @@ class RootWidget extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.transparent,
           titleTextStyle: GoogleFonts.robotoMono(
+            fontSize: 28,
             fontWeight: FontWeight.w300,
             color: Colors.white,
           ),

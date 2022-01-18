@@ -17,6 +17,7 @@ class Skills extends StatelessWidget {
           AutoSizeText(
             'Skills :',
             style: GoogleFonts.oswald(
+              fontSize: 32,
               color: Colors.white,
             ),
           ),
@@ -28,26 +29,26 @@ class Skills extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   'assets/svg/c++.svg',
-                  height: 100,
-                  width: 100,
+                  height: 60,
+                  width: 60,
                   fit: BoxFit.contain,
                 ),
                 SvgPicture.asset(
                   'assets/svg/python.svg',
-                  height: 100,
-                  width: 100,
+                  height: 60,
+                  width: 60,
                   fit: BoxFit.contain,
                 ),
                 SvgPicture.asset(
                   'assets/svg/dart.svg',
-                  height: 100,
-                  width: 100,
+                  height: 60,
+                  width: 60,
                   fit: BoxFit.contain,
                 ),
                 SvgPicture.asset(
                   'assets/svg/flutter.svg',
-                  height: 100,
-                  width: 100,
+                  height: 60,
+                  width: 60,
                   fit: BoxFit.contain,
                 ),
               ],

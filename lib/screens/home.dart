@@ -110,6 +110,11 @@ class HomeView extends StatelessWidget {
             const ContactMethods(),
           ],
         ),
+        drawer: Drawer(
+          child: ListView(
+            children: const [],
+          ),
+        ),
       );
     });
   }
