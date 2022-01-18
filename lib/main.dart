@@ -16,13 +16,12 @@ class RootWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromRGBO(2, 56, 110, 5),
+        scaffoldBackgroundColor: const Color.fromRGBO(13, 35, 58, 1),
         appBarTheme: AppBarTheme(
           elevation: 0,
           backgroundColor: Colors.transparent,
           titleTextStyle: GoogleFonts.robotoMono(
             fontWeight: FontWeight.w300,
-            fontSize: 28,
             color: Colors.white,
           ),
         ),
