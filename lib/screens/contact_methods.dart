@@ -18,10 +18,7 @@ class ContactMethods extends StatelessWidget {
         children: [
           Text(
             'Contact Methods :',
-            style: GoogleFonts.oswald(
-              fontSize: 32,
-              color: Colors.white,
-            ),
+            style: Theme.of(context).textTheme.headline5,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -46,6 +43,19 @@ class ContactMethods extends StatelessWidget {
                   },
                   child: SvgPicture.asset(
                     'assets/svg/instagram.svg',
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+                const SizedBox(width: 20),
+                GestureDetector(
+                  onTap: () async {
+                    await launch(
+                        'https://www.linkedin.com/in/vedant-barve-54411a1b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxrSBObGET8y0bJGHH7j6yg%3D%3D');
+                  },
+                  child: SvgPicture.asset(
+                    'assets/svg/linkedin.svg',
                     height: 30,
                     width: 30,
                     fit: BoxFit.contain,

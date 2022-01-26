@@ -18,10 +18,7 @@ class OnGoingProjects extends StatelessWidget {
         children: [
           Text(
             'Ongoing Projects :',
-            style: GoogleFonts.oswald(
-              fontSize: 32,
-              color: Colors.white,
-            ),
+            style: Theme.of(context).textTheme.headline5,
           ),
           Column(
             children: const [JTGallery()],
@@ -38,9 +35,12 @@ class JTGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      onLongPress: () async {
-        await launch('https://janhavee-tamboli-gallery.web.app/');
-      },
+      // trailing: IconButton(
+      //   icon: const Icon(Icons.open_in_browser),
+      //   onPressed: () async {
+      //     await launch('https://janhavee-tamboli-gallery.web.app/');
+      //   },
+      // ),
       leading: const Text('1.'),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

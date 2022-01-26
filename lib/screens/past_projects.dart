@@ -16,10 +16,7 @@ class PastProjects extends StatelessWidget {
         children: [
           Text(
             'Past Projects :',
-            style: GoogleFonts.oswald(
-              fontSize: 32,
-              color: Colors.white,
-            ),
+            style: Theme.of(context).textTheme.headline5,
           ),
           const RSIWidget(),
           const CustomDivider(),
@@ -47,7 +44,7 @@ class RSIWidget extends StatelessWidget {
             child: Text('RSI : '),
           ),
           Text(
-              'This app was made to fetches quotes from the MarketStack Api ,manupulates its data and output RSI values of selected stock (NSE).')
+              'This app was made to fetches quotes from the MarketStack Api ,manipulate its data and output RSI values of selected stock (NSE).')
         ],
       ),
       subtitle: Padding(
@@ -130,8 +127,7 @@ class Resume extends StatelessWidget {
             padding: EdgeInsets.symmetric(vertical: 10.0),
             child: Text('Resume / CV : '),
           ),
-          Text(
-              'This website is also a Flutter Firebase project xDxD. Thinking about selling this type of websites ...')
+          Text('This website is a Flutter Firebase project.')
         ],
       ),
       subtitle: Padding(

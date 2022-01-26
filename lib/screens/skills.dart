@@ -15,10 +15,7 @@ class Skills extends StatelessWidget {
         children: [
           Text(
             'Skills :',
-            style: GoogleFonts.oswald(
-              fontSize: 32,
-              color: Colors.white,
-            ),
+            style: Theme.of(context).textTheme.headline5,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),

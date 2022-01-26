@@ -16,17 +16,15 @@ class AboutMe extends StatelessWidget {
         children: [
           Text(
             'About Me :',
-            style: GoogleFonts.oswald(
-              fontSize: 32,
-              color: Colors.white,
-            ),
+            style: Theme.of(context).textTheme.headline5,
           ),
           ListTile(
             title: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 Text('Hello my name is Vedant Barve'),
-                Text('PICT 25'),
+                Text('I am a self-taught developer'),
+                Text('PICT 2025'),
                 Text('18 | Pune '),
               ],
             ),

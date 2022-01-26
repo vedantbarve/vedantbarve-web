@@ -14,12 +14,15 @@ class RootWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const ScrollBehavior()
+          .copyWith(physics: const BouncingScrollPhysics()),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color.fromRGBO(13, 35, 58, 1),
         textTheme: TextTheme(
+          headline5: GoogleFonts.merriweather(fontSize: 28),
           headline6: GoogleFonts.merriweather(),
-          subtitle1: GoogleFonts.merriweather(),
+          subtitle1: GoogleFonts.playfairDisplay(),
         ),
         appBarTheme: AppBarTheme(
           elevation: 0,
