@@ -88,7 +88,6 @@ class HomeView extends StatelessWidget {
             const PastProjects(),
             const CustomDivider(),
             const ContactMethods(),
-            const CustomDivider(),
           ],
         ),
       );
@@ -103,7 +102,8 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * 0.05),
+        horizontal: MediaQuery.of(context).size.width * 0.05,
+      ),
       child: const Divider(color: Colors.white),
     );
   }

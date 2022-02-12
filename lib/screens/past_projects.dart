@@ -21,8 +21,6 @@ class PastProjects extends StatelessWidget {
           const RSIWidget(),
           const CustomDivider(),
           const Resume(),
-          const CustomDivider(),
-          const Attendence(),
         ],
       ),
     );
