@@ -5,7 +5,9 @@ import 'package:vedantbarve/screens/home.dart';
 
 void main() {
   setPathUrlStrategy();
-  runApp(const RootWidget());
+  runApp(
+    const RootWidget(),
+  );
 }
 
 class RootWidget extends StatelessWidget {
@@ -14,28 +16,30 @@ class RootWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      scrollBehavior: const ScrollBehavior()
-          .copyWith(physics: const BouncingScrollPhysics()),
-      debugShowCheckedModeBanner: false,
+      scrollBehavior: const ScrollBehavior().copyWith(
+        physics: const BouncingScrollPhysics(),
+      ),
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color.fromRGBO(13, 35, 58, 1),
-        textTheme: TextTheme(
-          headline5: GoogleFonts.merriweather(fontSize: 28),
-          headline6: GoogleFonts.merriweather(),
-          subtitle1: GoogleFonts.playfairDisplay(),
-        ),
+        brightness: Brightness.light,
         appBarTheme: AppBarTheme(
-          elevation: 0,
-          centerTitle: true,
-          backgroundColor: Colors.transparent,
-          titleTextStyle: GoogleFonts.merriweather(
-            fontSize: 28,
-            fontWeight: FontWeight.w300,
+          color: const Color(0xff083c5d),
+          titleTextStyle: GoogleFonts.dmSerifDisplay(
+            fontSize: 32,
             color: Colors.white,
           ),
+          toolbarTextStyle: GoogleFonts.dmSerifDisplay(color: Colors.white),
         ),
-        colorScheme: const ColorScheme.dark(primary: Colors.white),
+        textTheme: TextTheme(
+          titleMedium: GoogleFonts.dmSerifDisplay(),
+        ),
+        colorScheme: const ColorScheme.light(
+          primary: Color(0xffd98310),
+        ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Color(0xff083c5d),
+        ),
       ),
+      debugShowCheckedModeBanner: false,
       home: const HomeView(),
     );
   }

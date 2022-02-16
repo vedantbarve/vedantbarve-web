@@ -10,39 +10,42 @@ class ContactMethods extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.width * 0.05),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Contact Methods :',
-            style: Theme.of(context).textTheme.headline5,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: Text(
+              'Contact Methods',
+              style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+            ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+        ),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 20.0),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 GestureDetector(
                   onTap: () async {
                     await launch('https://github.com/vedantbarve');
                   },
                   child: SvgPicture.asset(
-                    'assets/svg/github.svg',
+                    'assets/svg/logo/github.svg',
                     height: 40,
                     width: 40,
                     fit: BoxFit.contain,
                   ),
                 ),
-                const SizedBox(width: 20),
+                const SizedBox(width: 17),
                 GestureDetector(
                   onTap: () async {
                     await launch('https://www.instagram.com/vedant_barve/');
                   },
                   child: SvgPicture.asset(
-                    'assets/svg/instagram.svg',
+                    'assets/svg/logo/instagram.svg',
                     height: 30,
                     width: 30,
                     fit: BoxFit.contain,
@@ -55,7 +58,7 @@ class ContactMethods extends StatelessWidget {
                         'https://www.linkedin.com/in/vedant-barve-54411a1b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxrSBObGET8y0bJGHH7j6yg%3D%3D');
                   },
                   child: SvgPicture.asset(
-                    'assets/svg/linkedin.svg',
+                    'assets/svg/logo/linkedin.svg',
                     height: 30,
                     width: 30,
                     fit: BoxFit.contain,
@@ -63,9 +66,9 @@ class ContactMethods extends StatelessWidget {
                 ),
               ],
             ),
-          )
-        ],
-      ),
+          ),
+        )
+      ],
     );
   }
 }
