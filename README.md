@@ -1,16 +1,12 @@
 # vedantbarve
 
-A new Flutter project.
+[vedantbarve](https://vedant-barve.web.app/) is a personal portfolio web app made using Flutter and dart
 
-## Getting Started
+# Description :
+- This web app is made using Flutter and Dart.
+- Firebase by Google is used to host the web app.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Project Structure :
+- This is a single page portfolio web app.
+- The landing screen widget is located in <code>lib/screens/home.dart</code> 
+- Each section card is locateed in <code>lib/sections/</code>

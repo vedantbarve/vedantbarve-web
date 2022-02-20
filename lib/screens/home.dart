@@ -160,94 +160,21 @@ class HomeView extends StatelessWidget {
                   ]
                 : [],
           ),
-          body: Stack(
-            alignment: AlignmentDirectional.topCenter,
-            children: [
-              Wrap(
-                alignment: WrapAlignment.center,
-                runAlignment: WrapAlignment.center,
-                children: const [
-                  RotatingSquare(colour: 'red'),
-                  RotatingSquare(colour: 'green'),
-                  RotatingSquare(colour: 'blue'),
-                  RotatingSquare(colour: 'yellow'),
-                  RotatingSquare(colour: 'pink'),
-                ],
-              ),
-              ScrollablePositionedList.builder(
-                itemScrollController: itemController,
-                itemPositionsListener: itemPositionListener,
-                itemCount: _widgets.length,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: (constraints.maxWidth > 800)
-                        ? const EdgeInsets.symmetric(horizontal: 100)
-                        : EdgeInsets.zero,
-                    child: _widgets[index],
-                  );
-                },
-              ),
-            ],
+          body: ScrollablePositionedList.builder(
+            itemScrollController: itemController,
+            itemPositionsListener: itemPositionListener,
+            itemCount: _widgets.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: (constraints.maxWidth > 800)
+                    ? const EdgeInsets.symmetric(horizontal: 100)
+                    : EdgeInsets.zero,
+                child: _widgets[index],
+              );
+            },
           ),
         );
       },
-    );
-  }
-}
-
-class RotatingSquare extends StatefulWidget {
-  final String colour;
-  const RotatingSquare({Key? key, required this.colour}) : super(key: key);
-
-  @override
-  State<RotatingSquare> createState() => _RotatingSquareState();
-}
-
-class _RotatingSquareState extends State<RotatingSquare>
-    with TickerProviderStateMixin {
-  double angle = pi / 2;
-  late AnimationController _controller;
-  Tween<double> scale = Tween(begin: 0.85, end: 1);
-
-  rotate() async {
-    while (true) {
-      await Future.delayed(const Duration(milliseconds: 40));
-      setState(
-        () {
-          widget.colour == 'red'
-              ? angle = angle + pi / 90
-              : angle = angle - pi / 90;
-        },
-      );
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 900),
-    );
-    _controller.repeat(reverse: true);
-    rotate();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Transform.rotate(
-      angle: angle,
-      child: ScaleTransition(
-        scale: scale.animate(
-          CurvedAnimation(
-            parent: _controller,
-            curve: Curves.linear,
-          ),
-        ),
-        child: SvgPicture.asset(
-          'assets/svg/background/square_${widget.colour}.svg',
-        ),
-      ),
     );
   }
 }
