@@ -8,6 +8,7 @@ import 'package:vedantbarve/sections/aboutme.dart';
 import 'package:vedantbarve/sections/contactme.dart';
 import 'package:vedantbarve/sections/courses.dart';
 import 'package:vedantbarve/sections/education.dart';
+import 'package:vedantbarve/sections/footer.dart';
 import 'package:vedantbarve/sections/ongoing_projects.dart';
 import 'package:vedantbarve/sections/past_projects.dart';
 import 'package:vedantbarve/sections/skills.dart';
@@ -38,6 +39,7 @@ class HomeView extends StatelessWidget {
           const Courses(),
           const Education(),
           const ContactMethods(),
+          const Footer(),
         ];
 
         return Scaffold(
