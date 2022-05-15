@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:url_launcher/url_launcher.dart';
+
+import '../global/font_style.dart';
 
 class Courses extends StatelessWidget {
   const Courses({Key? key}) : super(key: key);
@@ -8,6 +10,12 @@ class Courses extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map> _content = [
+      {
+        'title': 'Internship Jantu Labs',
+        'image': 'assets/images/jantulabs.jpg',
+        'url':
+            'https://firebasestorage.googleapis.com/v0/b/vedant-barve.appspot.com/o/Exp_letter_Vedant%20(1).pdf?alt=media&token=3b03d009-868d-44bd-a11f-539dc594d167',
+      },
       {
         'title': 'Git and Github Bootcamp',
         'image': 'assets/images/git_course_certificate.jpg',
@@ -29,7 +37,7 @@ class Courses extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 'Courses & Certificates',
-                style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+                style: poppins(),
               ),
             ),
           ),
@@ -69,7 +77,7 @@ class Courses extends StatelessWidget {
                                 child: Text(
                                   item['title'],
                                   style:
-                                      Theme.of(context).textTheme.titleMedium,
+                                      const TextStyle(fontFamily: 'Sofia-Pro'),
                                 ),
                               )
                             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import '../global/font_style.dart';
 
 class Education extends StatelessWidget {
   const Education({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class Education extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 'Education',
-                style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+                style: poppins(),
               ),
             ),
           ),
@@ -32,21 +33,15 @@ class Education extends StatelessWidget {
             steps: [
               Step(
                 state: StepState.complete,
-                title: const Text('2021 - current '),
-                subtitle: const ListTile(
-                  leading: Icon(Icons.pin_drop),
-                  title: Text('Pune Institute of Computer Technology, Pune'),
+                title: const Text(
+                  '2021 - current',
+                  style: TextStyle(fontFamily: 'Sofia-Pro'),
                 ),
-                content: Container(),
-                isActive: true,
-              ),
-              Step(
-                state: StepState.complete,
-                title: const Text('2019-2021'),
                 subtitle: const ListTile(
                   leading: Icon(Icons.pin_drop),
                   title: Text(
-                    'Dr. Kalmadi Shamarao High School and Jr. College',
+                    'Pune Institute of Computer Technology, Pune',
+                    style: TextStyle(fontFamily: 'Sofia-Pro'),
                   ),
                 ),
                 content: Container(),
@@ -54,11 +49,31 @@ class Education extends StatelessWidget {
               ),
               Step(
                 state: StepState.complete,
-                title: const Text('2009-2019'),
+                title: const Text(
+                  '2019-2021',
+                  style: TextStyle(fontFamily: 'Sofia-Pro'),
+                ),
+                subtitle: const ListTile(
+                  leading: Icon(Icons.pin_drop),
+                  title: Text(
+                    'Dr. Kalmadi Shamarao High School and Jr. College',
+                    style: TextStyle(fontFamily: 'Sofia-Pro'),
+                  ),
+                ),
+                content: Container(),
+                isActive: true,
+              ),
+              Step(
+                state: StepState.complete,
+                title: const Text(
+                  '2009-2019',
+                  style: TextStyle(fontFamily: 'Sofia-Pro'),
+                ),
                 subtitle: const ListTile(
                   leading: Icon(Icons.pin_drop),
                   title: Text(
                     'Bal Shikshan Mandir English Medium School, Pune',
+                    style: TextStyle(fontFamily: 'Sofia-Pro'),
                   ),
                 ),
                 content: Container(),

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:url_launcher/url_launcher.dart';
+
+import '../global/font_style.dart';
 
 class ContactMethods extends StatelessWidget {
   const ContactMethods({
@@ -18,7 +20,7 @@ class ContactMethods extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: Text(
               'Contact Methods',
-              style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+              style: poppins(),
             ),
           ),
         ),
