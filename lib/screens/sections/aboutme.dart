@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AboutMe extends StatelessWidget {
   final double width;
@@ -20,9 +19,12 @@ class AboutMe extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           'I am a Student',
-                          style: GoogleFonts.oswald(fontSize: 48),
+                          style: TextStyle(
+                            fontFamily: 'Sofia-Pro',
+                            fontSize: 28,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, left: 20),
@@ -36,9 +38,12 @@ class AboutMe extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           'I am a Developer',
-                          style: GoogleFonts.oswald(fontSize: 48),
+                          style: TextStyle(
+                            fontFamily: 'Sofia-Pro',
+                            fontSize: 28,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, left: 15),
@@ -98,9 +103,12 @@ class AboutMe extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           'I am a Student',
-                          style: GoogleFonts.oswald(fontSize: 38),
+                          style: TextStyle(
+                            fontFamily: 'Sofia-Pro',
+                            fontSize: 28,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, left: 20),
@@ -114,9 +122,12 @@ class AboutMe extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           'I am a Developer',
-                          style: GoogleFonts.oswald(fontSize: 38),
+                          style: TextStyle(
+                            fontFamily: 'Sofia-Pro',
+                            fontSize: 28,
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, left: 15),

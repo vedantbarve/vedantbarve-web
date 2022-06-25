@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import 'package:url_strategy/url_strategy.dart';
+
 import 'package:vedantbarve/screens/home.dart';
 
 void main() {
@@ -21,16 +22,19 @@ class RootWidget extends StatelessWidget {
       ),
       theme: ThemeData(
         brightness: Brightness.light,
-        appBarTheme: AppBarTheme(
-          color: const Color(0xff083c5d),
-          titleTextStyle: GoogleFonts.dmSerifDisplay(
-            fontSize: 32,
+        appBarTheme: const AppBarTheme(
+          color: Color(0xff083c5d),
+          titleTextStyle: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 28,
+            fontWeight: FontWeight.w800,
             color: Colors.white,
           ),
-          toolbarTextStyle: GoogleFonts.dmSerifDisplay(color: Colors.white),
-        ),
-        textTheme: TextTheme(
-          titleMedium: GoogleFonts.dmSerifDisplay(),
+          toolbarTextStyle: TextStyle(
+            fontFamily: 'Poppins',
+            color: Colors.white,
+            fontSize: 14,
+          ),
         ),
         colorScheme: const ColorScheme.light(
           primary: Color(0xffd98310),

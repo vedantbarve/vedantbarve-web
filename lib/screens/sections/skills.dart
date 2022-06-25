@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:vedantbarve/global/font_style.dart';
 
 class Skills extends StatelessWidget {
   const Skills({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class Skills extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 'Skills',
-                style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+                style: poppins(),
               ),
             ),
           ),
@@ -31,7 +31,6 @@ class Skills extends StatelessWidget {
             children: [
               const Logo(title: 'C++', logoName: 'c++'),
               const Logo(title: 'Python', logoName: 'python'),
-              const Logo(title: 'Java', logoName: 'java'),
               const Logo(title: 'Html5', logoName: 'html'),
               const Logo(title: 'CSS3', logoName: 'css'),
               const Logo(title: 'Dart', logoName: 'dart'),
@@ -45,11 +44,11 @@ class Skills extends StatelessWidget {
                     width: 80,
                     fit: BoxFit.contain,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(5.0),
+                  const Padding(
+                    padding: EdgeInsets.all(5.0),
                     child: Text(
                       'Firebase',
-                      style: GoogleFonts.ovo(fontSize: 18),
+                      style: TextStyle(fontFamily: 'Sofia-Pro'),
                     ),
                   ),
                 ],
@@ -86,7 +85,7 @@ class Logo extends StatelessWidget {
           padding: const EdgeInsets.all(5.0),
           child: Text(
             title,
-            style: GoogleFonts.ovo(fontSize: 18),
+            style: const TextStyle(fontFamily: 'Sofia-Pro'),
           ),
         ),
       ],

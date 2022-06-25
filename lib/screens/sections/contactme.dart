@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vedantbarve/global/constants.dart';
+import '../../global/font_style.dart';
 
 class ContactMethods extends StatelessWidget {
   const ContactMethods({
@@ -18,7 +19,7 @@ class ContactMethods extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: Text(
               'Contact Methods',
-              style: GoogleFonts.dmSerifDisplay(fontSize: 32),
+              style: poppins(),
             ),
           ),
         ),
@@ -29,9 +30,7 @@ class ContactMethods extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 GestureDetector(
-                  onTap: () async {
-                    await launch('https://github.com/vedantbarve');
-                  },
+                  onTap: () async => await launch(github),
                   child: SvgPicture.asset(
                     'assets/svg/logo/github.svg',
                     height: 40,
@@ -41,9 +40,7 @@ class ContactMethods extends StatelessWidget {
                 ),
                 const SizedBox(width: 17),
                 GestureDetector(
-                  onTap: () async {
-                    await launch('https://www.instagram.com/vedant_barve/');
-                  },
+                  onTap: () async => await launch(instagram),
                   child: SvgPicture.asset(
                     'assets/svg/logo/instagram.svg',
                     height: 30,
@@ -53,10 +50,7 @@ class ContactMethods extends StatelessWidget {
                 ),
                 const SizedBox(width: 20),
                 GestureDetector(
-                  onTap: () async {
-                    await launch(
-                        'https://www.linkedin.com/in/vedant-barve-54411a1b8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxrSBObGET8y0bJGHH7j6yg%3D%3D');
-                  },
+                  onTap: () async => await launch(linkedin),
                   child: SvgPicture.asset(
                     'assets/svg/logo/linkedin.svg',
                     height: 30,
