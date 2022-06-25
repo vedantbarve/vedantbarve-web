@@ -78,6 +78,26 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  ffi:
+    dependency: transitive
+    description:
+      name: ffi
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.2"
+  file:
+    dependency: transitive
+    description:
+      name: file
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "6.1.2"
+=======
+>>>>>>> redesign
+>>>>>>> 8b266429808f3bd8d2b55469874c3d2dca178bf2
   flutter:
     dependency: "direct main"
     description: flutter
@@ -329,6 +349,26 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  win32:
+    dependency: transitive
+    description:
+      name: win32
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.3.8"
+  xdg_directories:
+    dependency: transitive
+    description:
+      name: xdg_directories
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
+=======
+>>>>>>> redesign
+>>>>>>> 8b266429808f3bd8d2b55469874c3d2dca178bf2
   xml:
     dependency: transitive
     description:
