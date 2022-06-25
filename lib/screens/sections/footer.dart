@@ -15,12 +15,18 @@ class Footer extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: const [
-                Text('Made with '),
+                Text(
+                  'Made with ',
+                  style: TextStyle(fontFamily: 'Sofia-Pro'),
+                ),
                 Icon(
                   Icons.favorite,
                   color: Colors.pinkAccent,
                 ),
-                Text(' in Flutter')
+                Text(
+                  ' in Flutter',
+                  style: TextStyle(fontFamily: 'Sofia-Pro'),
+                )
               ],
             ),
           ),
