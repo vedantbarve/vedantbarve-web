@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../global/font_style.dart';
+import '../../global/font_style.dart';
 
 class OngoingProjects extends StatelessWidget {
   const OngoingProjects({Key? key}) : super(key: key);

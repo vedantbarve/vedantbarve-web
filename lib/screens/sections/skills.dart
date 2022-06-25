@@ -31,7 +31,6 @@ class Skills extends StatelessWidget {
             children: [
               const Logo(title: 'C++', logoName: 'c++'),
               const Logo(title: 'Python', logoName: 'python'),
-              const Logo(title: 'Java', logoName: 'java'),
               const Logo(title: 'Html5', logoName: 'html'),
               const Logo(title: 'CSS3', logoName: 'css'),
               const Logo(title: 'Dart', logoName: 'dart'),

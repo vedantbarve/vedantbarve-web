@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../global/font_style.dart';
+import '../../global/font_style.dart';
 
 class Education extends StatelessWidget {
   const Education({Key? key}) : super(key: key);

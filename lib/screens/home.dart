@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:vedantbarve/sections/aboutme.dart';
-import 'package:vedantbarve/sections/contactme.dart';
-import 'package:vedantbarve/sections/courses.dart';
-import 'package:vedantbarve/sections/education.dart';
-import 'package:vedantbarve/sections/footer.dart';
-import 'package:vedantbarve/sections/ongoing_projects.dart';
-import 'package:vedantbarve/sections/past_projects.dart';
-import 'package:vedantbarve/sections/skills.dart';
+
+import 'sections/footer.dart';
+import 'sections/aboutme.dart';
+import 'sections/contactme.dart';
+import 'sections/courses.dart';
+import 'sections/education.dart';
+import 'sections/ongoing_projects.dart';
+import 'sections/past_projects.dart';
+import 'sections/skills.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -86,14 +86,14 @@ class HomeView extends StatelessWidget {
                         title: const Text('Contact Methods'),
                         leading: const Icon(Icons.navigate_before),
                       ),
-                      ListTile(
-                        onTap: () {
-                          launch(
-                              'https://firebasestorage.googleapis.com/v0/b/vedant-barve.appspot.com/o/Vedant%20Barve.pdf?alt=media&token=d1417a77-098e-4aac-8f62-b0000f94ee97');
-                        },
-                        title: const Text('View Resume'),
-                        leading: const Icon(Icons.open_in_browser),
-                      ),
+                      // ListTile(
+                      //   onTap: () {
+                      //     launch(
+                      //         'https://firebasestorage.googleapis.com/v0/b/vedant-barve.appspot.com/o/Vedant%20Barve.pdf?alt=media&token=d1417a77-098e-4aac-8f62-b0000f94ee97');
+                      //   },
+                      //   title: const Text('View Resume'),
+                      //   leading: const Icon(Icons.open_in_browser),
+                      // ),
                     ],
                   ),
                 ),
@@ -145,18 +145,18 @@ class HomeView extends StatelessWidget {
                         style: Theme.of(context).appBarTheme.toolbarTextStyle,
                       ),
                     ),
-                    TextButton.icon(
-                      onPressed: () => launch(
-                          'https://firebasestorage.googleapis.com/v0/b/vedant-barve.appspot.com/o/Vedant%20Barve.pdf?alt=media&token=d1417a77-098e-4aac-8f62-b0000f94ee97'),
-                      icon: const Icon(
-                        Icons.open_in_browser,
-                        color: Colors.white,
-                      ),
-                      label: Text(
-                        'Resume',
-                        style: Theme.of(context).appBarTheme.toolbarTextStyle,
-                      ),
-                    )
+                    // TextButton.icon(
+                    //   onPressed: () => launch(
+                    //       'https://firebasestorage.googleapis.com/v0/b/vedant-barve.appspot.com/o/Vedant%20Barve.pdf?alt=media&token=d1417a77-098e-4aac-8f62-b0000f94ee97'),
+                    //   icon: const Icon(
+                    //     Icons.open_in_browser,
+                    //     color: Colors.white,
+                    //   ),
+                    //   label: Text(
+                    //     'Resume',
+                    //     style: Theme.of(context).appBarTheme.toolbarTextStyle,
+                    //   ),
+                    // )
                   ]
                 : [],
           ),
